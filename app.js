@@ -92,7 +92,6 @@ window.addEventListener("DOMContentLoaded", function () {
 
 function diplayMenuItems(menuItems) {
     let displayMenu = menuItems.map(function (item) {
-        // console.log(item);
 
         return `
       <article class="menu-item">
@@ -110,7 +109,6 @@ function diplayMenuItems(menuItems) {
       `;
     });
     displayMenu = displayMenu.join("");
-    // console.log(displayMenu);
 
     sectionCenter.innerHTML = displayMenu;
 }
@@ -139,10 +137,8 @@ function displayMenuButtons() {
 
     filterBtns.forEach(function (btn) {
         btn.addEventListener("click", function (e) {
-            // console.log(e.currentTarget.dataset);
             const category = e.currentTarget.dataset.id;
             const menuCategory = menu.filter(function (menuItem) {
-                // console.log(menuItem.category);
                 if (menuItem.category === category) {
                     return menuItem;
                 }
