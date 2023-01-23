@@ -90,3 +90,15 @@ window.addEventListener("DOMContentLoaded", function () {
     diplayMenuItems(menu);
     displayMenuButtons();
   });
+
+  function diplayMenuItems(menuItems) {
+    let displayMenu = menuItems.map(function (item) {
+      // console.log(item);
+  
+      return ``;
+    });
+    displayMenu = displayMenu.join("");
+    // console.log(displayMenu);
+  
+    sectionCenter.innerHTML = displayMenu;
+  }
